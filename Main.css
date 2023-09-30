@@ -145,3 +145,66 @@ nav{
     font-size: 1.4rem;
     cursor: pointer;
 }
+
+header{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.header_container{
+    margin-top: 3rem;
+    position: relative;
+}
+.header_image{
+    width: 14rem;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    max-height: 17rem;
+    margin-inline: auto;
+    border-radius: 7rem 7rem var(--radius-2) var(--radius-2);
+}
+.header_image img{
+    height: 100%;
+}
+.header_content{
+    text-align: center;
+    margin-top: 2rem;
+    width: 40rem;
+    margin-inline: auto;
+}
+.header_content h4{
+    margin-bottom: 0.7rem;
+}
+.header_content h4 span{
+    color: var(--color-primary);
+}
+.header_content p{
+    margin: 0.8rem 0 2rem;
+}
+.header_cta{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.header_socials{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.header_socials a{
+    background: var(--color-gray-200);
+    color: var(--color-gray-900);
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: var(--radius-4);
+    transition: var(--transition);
+}
+.header_socials a:hover{
+    background: var(--color-primary);
+    color: var(--color-gray-100);
+    transform: translate(-0.5rem);
+}
