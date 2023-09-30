@@ -39,10 +39,10 @@ body{
     line-height: 1.7;
     font-weight: 300;
 }
-p,a, figcaption{
+p, a, figcaption{
     font-size: 0.85rem;
 }
-container{
+.container{
     width: var(--container-width-lg);
     margin-inline: auto;
 }
@@ -99,4 +99,49 @@ section > h1{
 }
 section:nth-child(odd){
     background: var(--color-gray-200);
+}
+
+nav{
+    background: var(--color-nav-bg);
+    border-bottom: 1px solid var(--color-gray-300);
+    display: grid;
+    place-items: center;
+    height: 3.8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    -moz-backdrop-filter: blur(15px);
+    -o-backdrop-filter: blur(15px);
+    -ms-backdrop-filter: blur(15px);
+    z-index: 10;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_logo{
+    width: 2.4rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.nav_menu a{
+    color: var(--color-gray-900);
+}
+.nav_toggle-open, .nav_toggle-close{
+    display: none;
+}
+.nav_theme-btn{
+    color: var(--color-gray-900);
+    background: transparent;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
