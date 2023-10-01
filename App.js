@@ -25,3 +25,12 @@ servicesButtons.forEach(item => {
 })
 
 getService('frontend')
+
+const containerEl = document.querySelector('.projects_container');
+var mixer = mixitup(containerEl, {
+    animation: {
+        enable: false
+    }
+});
+
+mixer.filter('*');

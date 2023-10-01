@@ -347,6 +347,14 @@ header{
     padding: 1.4rem;
     border-radius: var(--radius-2);
     transition: var(--transition);
+    /*mixitup animations*/
+    opacity: 0;
+    animation: identifier 1.5s ease forwards;
+}
+@keyframes identifier{
+    to{
+        opacity: 1;
+    }
 }
 .project:hover{
     box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.1);
