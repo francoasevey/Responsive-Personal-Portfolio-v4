@@ -129,14 +129,14 @@
         <h1>Recent Projects</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quis error officiis pariatur id molestiae? Sapiente, exercitationem?</p>
         <ul class="projects_categories">
-            <li class="active">All</li>
-            <li>Frontend</li>
-            <li>Backend</li>
-            <li>FullStack</li>
+            <li class="active" data-filter="*">All</li>
+            <li data-filter=".frontend">Frontend</li>
+            <li data-filter=".backend">Backend</li>
+            <li data-filter=".fullstack">FullStack</li>
         </ul>
 
         <div class="container projects_container">
-            <article class="project fullstack">
+            <article class="project mix fullstack" data-order="1">
                 <div class="project_image">
                     <img src="/images/project1.jpg" alt="project image one">
                 </div>
@@ -148,7 +148,7 @@
                 </div>
             </article>
 
-            <article class="project frontend">
+            <article class="project mix frontend" data-order="2">
                 <div class="project_image">
                     <img src="/images/project2.jpg" alt="project image two">
                 </div>
@@ -160,11 +160,11 @@
                 </div>
             </article>
 
-            <article class="project">
+            <article class="project mix fullstack" data-order="3">
                 <div class="project_image">
                     <img src="/images/project3.jpg" alt="project image three">
                 </div>
-                <h3>Project three title (backend)</h3>
+                <h3>Project three title (fullstack)</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis itaque eius optio saepe, sapiente quaerat vero, qui ad mollitia aliquam quod quas dicta, cumque quis. Quia saepe adipisci eos?</p>
                 <div class="project_cta">
                     <a href="https://frankdev.com" class="btn sm primary" target="_blank">Demo</a>
@@ -172,7 +172,7 @@
                 </div>
             </article>
 
-            <article class="project">
+            <article class="project mix frontend" data-order="4">
                 <div class="project_image">
                     <img src="/images/project4.jpg" alt="project image four">
                 </div>
@@ -184,7 +184,7 @@
                 </div>
             </article>
 
-            <article class="project">
+            <article class="project mix frontend" data-order="5">
                 <div class="project_image">
                     <img src="/images/project5.jpg" alt="project image five">
                 </div>
@@ -196,11 +196,11 @@
                 </div>
             </article>
 
-            <article class="project">
+            <article class="project mix backend" data-order="6">
                 <div class="project_image">
                     <img src="/images/project6.jpg" alt="project image six">
                 </div>
-                <h3>Project six title (frontend)</h3>
+                <h3>Project six title (backend)</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis itaque eius optio saepe, sapiente quaerat vero, qui ad mollitia aliquam quod quas dicta, cumque quis. Quia saepe adipisci eos?</p>
                 <div class="project_cta">
                     <a href="https://frankdev.com" class="btn sm primary" target="_blank">Demo</a>
@@ -210,6 +210,7 @@
         </div>
     </section>
 
+    <script src="/patrickkunka-mixitup-61dac05//dist/mixitup.min.js"></script>
     <script src="/data.js"></script>
     <script src="/App.js"></script>
 </body>
