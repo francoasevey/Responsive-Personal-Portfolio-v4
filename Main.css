@@ -528,6 +528,7 @@ footer{
         gap: 0;
         width: fit-content;
         display: none;
+        perspective: 250px;
     }
     .nav_menu li a{
         background: var(--color-gray-200);
@@ -552,7 +553,95 @@ footer{
         align-items: center;
         gap: 2.5rem;
     }
-    header , section, footer{
+    .nav_menu li{
+        transform: rotateX(90deg);
+        opacity: 0;
+        animation: navKey 500ms ease-in-out forwards;
+        transform-origin: top;
+    }
+    .nav_menu li:nth-child(2){
+        animation-delay: 200ms;
+    }
+    .nav_menu li:nth-child(3){
+        animation-delay: 400ms;
+    }
+    .nav_menu li:nth-child(4){
+        animation-delay: 600ms;
+    }
+    .nav_menu li:nth-child(5){
+        animation-delay: 800ms;
+    }
+    @keyframes navKey {
+        to{
+            transform: rotateX(0deg);
+            opacity: 1;
+        }
+    }
+    header{
+        height: 115vh;
+    }
+    .header_content{
+        width: var(--container-width-sm);
+        padding-bottom: 3rem;
+    }
+    .header_socials{
         display: none;
+    }
+    .header_image{
+        width: 50vw;
+        aspect-ratio: 4/5;
+    }
+    .about_container{
+        grid-template-columns: 1fr;
+    }
+    .about_image{
+        display: none;
+    }
+    .about_cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .services_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .services_right{
+        padding: 0;
+        border: 0;
+    }
+    .services_right h3{
+        margin-bottom: 0.6rem;
+    }
+    .projects_categories{
+        gap: 0.7rem;
+    }
+    .projects_categories li{
+        padding: 0.8rem 1rem;
+    }
+    .projects_container{
+        gap: 1rem;
+    }
+
+    .swiper{
+        width: var(--container-width-sm);
+    }
+    .swiper-wrapper{
+        padding-bottom: 3rem;
+    }
+    .swiper-slide{
+        padding: 1.5rem;
+    }
+    .contact_container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .contact_list{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer_menu{
+        flex-direction: column;
+        gap: 1.6rem;
+        align-items: center;
     }
 }
