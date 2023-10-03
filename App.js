@@ -100,4 +100,4 @@ window.addEventListener('load', () => {
     document.body.className = window.localStorage.getItem('theme');
 })
 
-/*AOS.init({duration: 1500, offset: 80});*/
+AOS.init({duration: 1500, offset: 80})
